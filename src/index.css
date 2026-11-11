@@ -17,6 +17,7 @@
 html, body, #root { height: 100%; margin: 0; }
 body { background: var(--page); color: var(--text); }
 h1, h3, p { margin: 0; }
+a { color: #6da7ec; }
 button, select, input { font: inherit; color: inherit; }
 
 .app { display: flex; flex-direction: column; height: 100%; }
@@ -119,3 +120,12 @@ th { color: var(--muted); font-weight: 500; position: sticky; top: 0; background
 .film main { grid-template-columns: minmax(0, 1fr) var(--film-panel, 470px); overflow: hidden; }
 .film .panel { width: 470px; scrollbar-width: none; }
 .film .legend, .film .timebar, .film .maplibregl-ctrl { opacity: var(--film-chrome, 1); }
+
+/* Link from the map to the story at #story. */
+.brand-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.story-link {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 999px; text-decoration: none; white-space: nowrap;
+  color: #fff; font-size: 12px; font-weight: 600; background: linear-gradient(90deg, #184f95, var(--blue)); border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.story-link:hover { filter: brightness(1.15); }
+.story-link small { font-weight: 400; opacity: 0.85; }

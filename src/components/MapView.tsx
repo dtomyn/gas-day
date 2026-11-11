@@ -1,16 +1,13 @@
 import { TripsLayer } from '@deck.gl/geo-layers'
 import { PathLayer, PolygonLayer, ScatterplotLayer, TextLayer } from '@deck.gl/layers'
 import { MapboxOverlay } from '@deck.gl/mapbox'
-import { Map as MlMap, NavigationControl, setWorkerUrl } from 'maplibre-gl'
-import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
+import { Map as MlMap, NavigationControl } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useMemo, useRef } from 'react'
 import { type Dataset, type Fire, type Hotspot, type KeyPoint, type Pt, bcf, dominant, fmt, network, shortName, utilization } from '../lib/data'
 import { film } from '../lib/film'
+import '../lib/mapWorker'
 import { utilColor } from '../lib/theme'
-
-// MapLibre locates its worker relative to its own file, which bundlers cannot follow. Hand it a bundled copy.
-setWorkerUrl(workerUrl)
 
 const BASEMAP = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 /** Seconds between successive flow pulses on a route. */

@@ -20,6 +20,12 @@ The map looks authoritative. Some of it is: the flow numbers and key point locat
 | **The US ownership list is editorial**: a point-in-time list of pipelines treated as TC Energy assets. | Ownership wording in route tooltips, a comment beside `US_OPERATORS`, README |
 | **Heatmap values above 100% are shown as 100%.** | Heatmap subtitle |
 | **Missing values are missing**, not zero. | "n/a", "capacity not reported", "cause not recorded" |
+| **The story's pipeline route is volunteer-mapped.** It comes from OpenStreetMap and measures 662 km; the operator quotes 670 km. | Story closing screen, README |
+| **Story terrain is exaggerated** 1.5 times, so relief reads from the air. | First pipeline card, story closing screen, README |
+| **Ship tracks are illustrative.** The regulator publishes the destination country and the month, not the port, the route or the sailing date. | Export card, story closing screen, README |
+| **Production is raw gas at the wellhead**, and the latest months may still be revised. | Production chart subtitle, story closing screen, README |
+| **Pipeline size and capacity, and liquefaction figures, are the operators' public statements**, not data. | Wording in the cards ("its operator puts"), story closing screen |
+| **Satellite imagery is a 2016 mosaic** stitched from different seasons, so snow cover changes abruptly in places. | README |
 
 Any new approximation or editorial choice should be added to this table and disclosed in the same way: next to the thing it affects, and in the README's "Known limits".
 
@@ -34,3 +40,5 @@ Any new approximation or editorial choice should be added to this table and disc
 - [src/components/Charts.tsx](../../src/components/Charts.tsx): chart subtitles
 - [src/components/MapView.tsx](../../src/components/MapView.tsx): tooltips
 - [scripts/fetch-data.mjs](../../scripts/fetch-data.mjs): `US_OPERATORS`
+- [src/story/Story.tsx](../../src/story/Story.tsx): the story's cards and closing screen
+- [src/story/data.ts](../../src/story/data.ts): the illustrative sea lanes

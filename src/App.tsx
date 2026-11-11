@@ -84,7 +84,10 @@ export default function App() {
     <div className="app">
       <header className="top">
         <div className="brand">
-          <h1>Gas Day</h1>
+          <div className="brand-row">
+            <h1>Gas Day</h1>
+            {!film && <a className="story-link" href="#story">Wellhead to water <small>the LNG story in 3D</small> →</a>}
+          </div>
           <p>Natural gas moving through TC Energy's Canadian network, from public regulatory data</p>
         </div>
         <div className="kpis">

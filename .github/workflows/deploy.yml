@@ -27,9 +27,10 @@ jobs:
           cache: npm
       - run: npm ci
       # Burned-area history is slow to download and only changes yearly, so the committed copy is used.
+      # The story's route and Montney production (a 125 MB download) are refreshed by hand for the same reason.
       # If a source is down, the build falls back to the data committed in the repository.
       - name: Refresh public data
-        run: npm run data -- flows pipelines-us hotspots weather || echo "::warning::Data refresh failed, deploying with committed data"
+        run: npm run data -- flows pipelines-us hotspots weather lng || echo "::warning::Data refresh failed, deploying with committed data"
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
