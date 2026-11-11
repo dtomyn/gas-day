@@ -20,10 +20,14 @@ Anyone should be able to clone the project and reproduce the data. Keeping the h
   | `hotspots` | Natural Resources Canada (CWFIS) hotspots, last 24 hours | `hotspots.json` |
   | `burned` | Natural Resources Canada burned-area polygons, 2006 onward, 5,000 ha or more | `burned.json` |
   | `weather` | Open-Meteo daily mean temperature for four cities | `weather.json` |
+  | `route` | Coastal GasLink line from OpenStreetMap, with ground elevation every 0.5 km from the Copernicus model through Open-Meteo | `story-route.json` |
+  | `montney` | BC Energy Regulator monthly production by well and formation, and well surface locations | `story-montney.json` |
+  | `lng` | Canada Energy Regulator LNG export shipments, Kitimat only | `story-lng.json` |
 
 - Line every daily series up on the same calendar, starting 2006-01-01, so the app can look up any day by its position.
 - Record the source and the time fetched inside each file.
-- Shrink geometry before saving: simplify lines and outlines, round coordinates to three decimal places, and keep only the outer ring of each fire.
+- Shrink geometry before saving: simplify lines and outlines, round coordinates to three decimal places, and keep only the outer ring of each fire. The story's pipeline route keeps four decimal places, because the camera flies close to it.
+- Boil the regulator's 370 MB of well-by-well production down to two monthly totals (Montney and everything else) and one first-production date per Montney well.
 - Work out each fire's and hotspot's distance to the nearest route here, not in the browser.
 - Fail loudly when a source changes shape (for example a missing column in a regulator file), rather than writing bad data.
 - Retry a failed download up to three times, and carry on with the other sources if one fails, exiting with an error so automation notices.
@@ -31,7 +35,9 @@ Anyone should be able to clone the project and reproduce the data. Keeping the h
 
 ## What the app expects in return
 
-Only `flows.json` is required. If it is missing the app says so and tells the viewer to run `npm run data`. Every other file is optional: without it, the matching layer or chart is simply left out.
+Only `flows.json` is required by the main map. If it is missing the app says so and tells the viewer to run `npm run data`. Every other file is optional: without it, the matching layer or chart is simply left out.
+
+The story at `#story` needs its three `story-*.json` files and nothing else. If one is missing it says so and names the command to run.
 
 ## Out of scope
 
@@ -42,4 +48,5 @@ Only `flows.json` is required. If it is missing the app says so and tells the vi
 
 - [scripts/fetch-data.mjs](../../scripts/fetch-data.mjs): the whole pipeline
 - [src/lib/data.ts](../../src/lib/data.ts): `loadAll`, and the types that describe each file
+- [src/story/data.ts](../../src/story/data.ts): `loadStory`, for the three story files
 - [public/data/](../../public/data/): the fetched files, committed so the site can build without a fetch

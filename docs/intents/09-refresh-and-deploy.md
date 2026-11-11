@@ -11,8 +11,9 @@ Live hotspots are only useful if they are today's, and new flow filings should a
 ## What it must do
 
 - Rebuild and publish to GitHub Pages on three triggers: every push to `main`, every day at 11:00 UTC, and on demand.
-- Before building, refresh the fast sources: flows, US routes, hotspots and weather.
+- Before building, refresh the fast sources: flows, US routes, hotspots, weather and LNG shipments.
 - Leave burned-area history alone. It takes several minutes to download and changes only yearly, so the committed copy is used.
+- Leave the story's pipeline route and Montney production alone too. The route does not change, and production is a 125 MB download that the regulator updates monthly. Refresh them by hand with `npm run data -- route montney` and commit the result.
 - If the refresh fails, raise a warning and publish anyway with the data committed in the repository.
 - Allow only one deployment at a time; a newer run cancels one still in progress.
 - Build with a relative base path, so the site works from any GitHub Pages sub-path.
