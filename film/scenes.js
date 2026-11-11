@@ -284,6 +284,7 @@
     #film .title { inset: 0; display: grid; place-content: end center; padding-bottom: 96px; text-align: center; }
     #film .title h1 { margin: 0; font-size: 132px; font-weight: 700; letter-spacing: .14em; text-indent: .14em; text-shadow: 0 4px 60px rgba(0,0,0,.9); }
     #film .title p { margin: 10px 0 0; font-size: 27px; letter-spacing: .05em; color: #c3c2b7; text-shadow: 0 2px 24px #000; }
+    #film .title small { display: block; margin-top: 18px; font-size: 17px; letter-spacing: .08em; text-transform: uppercase; color: #c3c2b7; text-shadow: 0 2px 16px #000; }
     #film .rule { width: 120px; height: 3px; background: #3987e5; margin: 22px auto 0; border-radius: 2px; }
     #film .year { font-size: 136px; font-weight: 700; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; text-shadow: 0 2px 40px rgba(0,0,0,.95); }
     #film .tag { font-size: 15px; letter-spacing: .16em; text-transform: uppercase; padding: 9px 16px 9px 14px; background: rgba(13,13,13,.82); border-left: 3px solid #3987e5; border-radius: 0 4px 4px 0; white-space: nowrap; }
@@ -316,7 +317,7 @@
       <div class="tag"></div>
       <div class="ripple"></div>
       <svg class="cursor" viewBox="0 0 24 24"><path d="M5 2l14 11h-7.2l4 8-2.8 1.3-3.9-8L5 19z" fill="#fff" stroke="#111" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <div class="title"><div><h1>GAS DAY</h1><div class="rule"></div><p>Twenty years of natural gas, on one map</p></div></div>
+      <div class="title"><div><h1>GAS DAY</h1><div class="rule"></div><p>Twenty years of natural gas, on one map</p><small>Unofficial. Not affiliated with TC Energy.</small></div></div>
       <div class="end"><div><h1>GAS DAY</h1><div class="rule"></div>
         <h2>Built entirely from public data</h2>
         <p>Canada Energy Regulator · US Energy Information Administration · Natural Resources Canada · Open-Meteo</p>
