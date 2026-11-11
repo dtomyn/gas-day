@@ -26,3 +26,26 @@ dist-ssr
 # Film renders: large and recreated by film/render.py
 film/out/
 film/*.mp4
+
+# Python (film renderer)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
+# Build and tool caches
+*.tsbuildinfo
+.vite/
+coverage/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Operating system files
+Thumbs.db
+Desktop.ini
