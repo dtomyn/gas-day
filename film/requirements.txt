@@ -1,0 +1,5 @@
+playwright
+imageio-ffmpeg
+kokoro-onnx
+soundfile
+numpy

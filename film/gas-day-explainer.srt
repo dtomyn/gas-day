@@ -1,0 +1,167 @@
+1
+00:00:01,850 --> 00:00:04,891
+Right now, natural gas is moving beneath your feet.
+
+2
+00:00:04,891 --> 00:00:09,125
+Across mountains, prairie and shield, through steel you will never see.
+
+3
+00:00:09,625 --> 00:00:14,361
+This is twenty years of that movement, drawn from public records, on a single map.
+
+4
+00:00:18,811 --> 00:00:19,915
+This is Gas Day.
+
+5
+00:00:19,915 --> 00:00:23,989
+Every line follows a route on TC Energy's Canadian network,
+
+6
+00:00:23,989 --> 00:00:29,306
+and every number comes from flow data filed with the Canada Energy Regulator.
+
+7
+00:00:29,757 --> 00:00:31,494
+Thick lines carry more gas.
+
+8
+00:00:31,494 --> 00:00:34,454
+Brighter blue means a route is closer to full.
+
+9
+00:00:34,454 --> 00:00:37,608
+And the pulses show which way the gas is flowing.
+
+10
+00:00:39,708 --> 00:00:42,639
+Press play, and twenty years run past in seconds.
+
+11
+00:00:42,639 --> 00:00:44,913
+More than seven thousand days of flow.
+
+12
+00:00:45,513 --> 00:00:46,595
+Watch the west.
+
+13
+00:00:46,595 --> 00:00:51,575
+In 2010, about five billion cubic feet a day came down this corridor,
+
+14
+00:00:51,575 --> 00:00:54,174
+out of Alberta and British Columbia.
+
+15
+00:00:54,574 --> 00:00:57,390
+By 2025, it was more than twelve.
+
+16
+00:01:00,490 --> 00:01:03,312
+Click any point, and the panel tells its story.
+
+17
+00:01:03,312 --> 00:01:06,015
+This is Niagara, on the border with New York.
+
+18
+00:01:06,515 --> 00:01:09,711
+In 2007, gas flowed east here, out of Canada,
+
+19
+00:01:09,711 --> 00:01:13,192
+at around eight hundred million cubic feet a day.
+
+20
+00:01:13,692 --> 00:01:16,711
+Then American shale changed everything.
+
+21
+00:01:16,711 --> 00:01:18,027
+Watch the pulses.
+
+22
+00:01:18,027 --> 00:01:23,292
+By 2025, the same pipe was carrying gas the other way, into Ontario.
+
+23
+00:01:23,892 --> 00:01:27,433
+One chart shows the whole border shifting, region by region.
+
+24
+00:01:30,733 --> 00:01:31,679
+January 2024.
+
+25
+00:01:31,679 --> 00:01:34,738
+An Arctic front settles over the prairies,
+
+26
+00:01:34,738 --> 00:01:39,181
+and Calgary's average temperature falls to minus thirty-four.
+
+27
+00:01:39,631 --> 00:01:43,163
+Gas delivered toward the city jumps by more than half in a week,
+
+28
+00:01:43,163 --> 00:01:45,924
+to the highest level this point has ever recorded.
+
+29
+00:01:46,524 --> 00:01:48,124
+Here, every dot is one day.
+
+30
+00:01:48,124 --> 00:01:52,924
+The colder it gets, the further right it sits, and the more gas this point moves.
+
+31
+00:01:53,524 --> 00:01:57,833
+And one grid shows, month by month, which points are running close to full.
+
+32
+00:02:00,633 --> 00:02:05,653
+Now switch on the wildfire layer, and go back to the summer of 2023.
+
+33
+00:02:05,653 --> 00:02:09,124
+The worst fire season Canada has ever recorded.
+
+34
+00:02:09,624 --> 00:02:11,682
+Each orange shape is a large fire.
+
+35
+00:02:11,682 --> 00:02:13,074
+By this map's estimate,
+
+36
+00:02:13,074 --> 00:02:18,584
+more than half a million hectares burned within fifty kilometres of these routes that year.
+
+37
+00:02:19,084 --> 00:02:20,611
+And the red dots are live:
+
+38
+00:02:20,611 --> 00:02:23,607
+satellite hotspots from the last twenty-four hours.
+
+39
+00:02:26,557 --> 00:02:27,763
+No private feeds.
+
+40
+00:02:27,763 --> 00:02:28,615
+No licences.
+
+41
+00:02:28,615 --> 00:02:34,365
+Only public data, a time slider, and a new way to see a network that never stops.
+
+42
+00:02:35,265 --> 00:02:36,417
+This is Gas Day.
