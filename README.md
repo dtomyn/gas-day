@@ -40,6 +40,10 @@ npm run dev
 
 `npm run data` downloads every dataset into `public/data/`. No API keys are needed. To refresh only some sources, name them: `npm run data -- flows hotspots`. The burned-area history takes several minutes, the Montney production history is a 125 MB download, and the route's elevation profile takes about three minutes because the elevation service is rate-limited. The rest take seconds.
 
+### In a dev container
+
+The repository includes a VS Code dev container (`.devcontainer/`) with Node 22, Python 3.12 and the GitHub CLI. In VS Code, run **Dev Containers: Reopen in Container**. The container runs `npm ci` when it is created, keeps `node_modules` in its own volume, and forwards ports 5173 (dev server) and 4173 (preview). The film renderer drives Microsoft Edge with Direct3D, so it is meant to run on Windows, not in the container.
+
 ## Data sources
 
 | Data | Source | Licence |
